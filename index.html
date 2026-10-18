@@ -1,0 +1,1180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1b1026">
+<title>Our Little Love Story ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #150d20;
+  --plum: #32182f;
+  --pink: #cc4d89;
+  --light-pink: #ffd9ee;
+  --white: #fff0fa;
+  --muted: #e7bfdc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: var(--white);
+  background:
+    radial-gradient(ellipse at 80% 15%, #48203c 0%, transparent 42%),
+    radial-gradient(ellipse at 12% 70%, #24112e 0%, transparent 45%),
+    linear-gradient(135deg, #100b1d, #35182f 65%, #201027);
+  background-attachment: fixed;
+}
+
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible {
+  outline: 3px solid #ffd1eb;
+  outline-offset: 4px;
+}
+
+h1, h2, .script {
+  font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 9vw, 5.5rem);
+  line-height: 1.15;
+  color: #fff0f8;
+  text-shadow: 0 0 28px #f79bca38;
+}
+
+h2 {
+  font-size: clamp(2.1rem, 6vw, 3.4rem);
+  line-height: 1.25;
+  color: #ffd4eb;
+}
+
+h3 {
+  line-height: 1.5;
+  color: #ffd6ed;
+}
+
+p {
+  font-size: .95rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.screen {
+  width: 100%;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 18px;
+  text-align: center;
+  position: relative;
+}
+
+.eyebrow {
+  color: #edb7d9;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: .7rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.big-heart {
+  font-size: clamp(4rem, 13vw, 6rem);
+  margin: 16px 0;
+  animation: heartbeat 1.4s infinite;
+  filter: drop-shadow(0 8px 18px #f16bad50);
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  15% { transform: scale(1.12); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.08); }
+}
+
+.intro-text {
+  max-width: 620px;
+  margin-top: 18px;
+}
+
+.question-title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  margin-top: 22px;
+  min-height: 48px;
+}
+
+.btn {
+  min-height: 47px;
+  padding: 12px 25px;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: .88rem;
+  transition: transform .2s, box-shadow .2s;
+  touch-action: manipulation;
+}
+
+.yes {
+  color: white;
+  background: linear-gradient(120deg, #d34b89, #b43c79);
+  border: 1px solid #f3a6d0;
+  box-shadow: 0 6px 22px #dc559b35;
+}
+
+.yes:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px #dc559b55;
+}
+
+.no {
+  color: #ffe6f4;
+  background: transparent;
+  border: 1px solid #e9a5cc;
+}
+
+.note {
+  font-size: .78rem;
+  color: #eab7d8;
+  margin-top: 20px;
+}
+
+#lovePage {
+  width: 100%;
+}
+
+.content {
+  padding: 25px 16px;
+  text-align: center;
+}
+
+.hero {
+  width: min(100%, 900px);
+  margin: auto;
+  padding: 28px 8px 38px;
+}
+
+.hero p {
+  max-width: 660px;
+  margin: 15px auto;
+}
+
+.card {
+  width: min(100%, 760px);
+  margin: 22px auto;
+  padding: clamp(22px, 5vw, 40px);
+  border: 1px solid #a65c8b66;
+  border-radius: 26px;
+  background: linear-gradient(145deg, #341a32ed, #1b1228f5);
+  box-shadow: 0 14px 40px #00000025, 0 0 20px #d05d9b0b;
+}
+
+.script {
+  font-size: clamp(1.7rem, 5vw, 2.5rem);
+  color: #ffc3e2;
+  margin-bottom: 12px;
+}
+
+.card p + p {
+  margin-top: 14px;
+}
+
+.section-heading {
+  margin: 45px auto 10px;
+  text-align: center;
+}
+
+.section-subtitle {
+  max-width: 620px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+.memories {
+  width: min(100%, 900px);
+  height: 370px;
+  margin: 30px auto 10px;
+  perspective: 1100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+  animation: rotateCarousel 25s linear infinite;
+}
+
+.memories.paused .carousel {
+  animation-play-state: paused;
+}
+
+.memory {
+  position: absolute;
+  top: 48px;
+  left: calc(50% - 90px);
+  width: 180px;
+  height: 235px;
+  border: 1px solid #e6a5cd;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #29152c;
+  box-shadow: 0 12px 30px #00000045, 0 0 20px #e986bf22;
+  transform: rotateY(calc(var(--i) * 60deg)) translateZ(260px);
+}
+
+.memory img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.memory-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 13px 5px;
+  font-size: .7rem;
+  color: white;
+  background: linear-gradient(transparent, #160d20f5);
+}
+
+@keyframes rotateCarousel {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-360deg); }
+}
+
+.memory-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px auto;
+}
+
+.outline-btn {
+  color: #fff0fa;
+  background: transparent;
+  border: 1px solid #f2a5ce;
+  border-radius: 999px;
+  padding: 12px 22px;
+  min-height: 44px;
+  font-size: .8rem;
+}
+
+.outline-btn:hover {
+  background: #ffffff12;
+}
+
+.moments {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  width: min(100%, 850px);
+  margin: 25px auto;
+}
+
+.moment {
+  min-width: 0;
+  padding: 23px 17px;
+  border: 1px solid #a65c8b55;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #351a33, #20152b);
+  box-shadow: 0 8px 24px #00000020;
+  transition: transform .25s;
+}
+
+.moment:hover {
+  transform: translateY(-5px);
+}
+
+.moment .emoji {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.moment h3 {
+  margin-bottom: 8px;
+}
+
+.moment p {
+  font-size: .85rem;
+}
+
+.letter {
+  width: min(100%, 760px);
+  margin: 35px auto 50px;
+}
+
+.letter-content {
+  margin-top: 20px;
+  padding: clamp(22px, 5vw, 35px);
+  text-align: left;
+  border: 1px solid #a65c8b66;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #341a32, #20142c);
+  line-height: 2;
+  animation: reveal .5s ease both;
+}
+
+.letter-content p {
+  margin: 12px 0;
+}
+
+.signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.8rem;
+  color: #ffc3e2;
+  margin-top: 16px;
+}
+
+.quiz-section {
+  width: min(100%, 760px);
+  margin: 35px auto;
+  padding: clamp(14px, 4vw, 28px);
+  border-radius: 28px;
+  background: linear-gradient(145deg, #2e182f, #191226);
+  border: 1px solid #a65c8b66;
+  box-shadow: 0 18px 50px #00000028;
+}
+
+.quiz-intro {
+  padding: 12px 8px 25px;
+}
+
+.quiz-card {
+  padding: clamp(22px, 5vw, 34px) 16px;
+  margin: 18px 0;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #381b35, #21142e);
+  border: 1px solid #a65c8b66;
+  overflow: visible;
+}
+
+.quiz-emoji {
+  font-size: 2.6rem;
+  margin-bottom: 12px;
+  animation: heartbeat 1.8s infinite;
+}
+
+.quiz-card h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  margin-bottom: 12px;
+}
+
+.quiz-card .buttons {
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.quiz-result {
+  margin: 22px auto 0;
+  padding: clamp(18px, 4vw, 28px);
+  border-radius: 20px;
+  color: #fff0fa;
+  background: linear-gradient(135deg, #51223f, #34203f, #25203d);
+  border: 1px solid #cf83b166;
+  animation: reveal .6s ease both;
+}
+
+.quiz-result p {
+  margin-top: 12px;
+}
+
+.quiz-result h3 {
+  color: #ffd1eb;
+}
+
+.quiz-result h2 {
+  font-size: clamp(2rem, 6vw, 3rem);
+}
+
+.quiz-next {
+  margin-top: 22px;
+}
+
+.quiz-confirm {
+  margin-top: 22px;
+  padding: 18px 12px;
+  border-radius: 18px;
+  background: #1b1128;
+  border: 1px solid #a65c8b66;
+}
+
+.quiz-confirm p {
+  color: #ffe2f2;
+}
+
+.confirm-message {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 14px;
+  background: #51233f;
+  border: 1px solid #b96a9a55;
+  color: #fff0fa;
+  animation: reveal .4s ease both;
+  font-size: .9rem;
+  line-height: 1.8;
+}
+
+.final-love {
+  padding: 8px 0;
+}
+
+.final-love .script {
+  margin-top: 20px;
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(14px) scale(.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+footer {
+  padding: 30px 15px;
+  text-align: center;
+  font-size: .8rem;
+  line-height: 2;
+  color: #dcb1d1;
+}
+
+.floating {
+  position: fixed;
+  bottom: -35px;
+  z-index: 20;
+  pointer-events: none;
+  animation: floatUp 6s linear forwards;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(40deg);
+    opacity: 0;
+  }
+}
+
+.romantic-star {
+  position: fixed;
+  top: -20px;
+  z-index: 0;
+  pointer-events: none;
+  color: #ffe4f5;
+  text-shadow: 0 0 10px #ffb9df;
+  animation: starFall linear forwards;
+}
+
+@keyframes starFall {
+  to {
+    transform: translateY(110vh) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  position: fixed;
+  top: -30px;
+  z-index: 100;
+  pointer-events: none;
+  animation: fall 4s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.runaway {
+  z-index: 5;
+}
+
+#questionPage, #lovePage {
+  isolation: isolate;
+}
+
+@media (max-width: 600px) {
+  .screen {
+    padding: 24px 15px;
+  }
+
+  .content {
+    padding: 18px 12px;
+  }
+
+  .intro-text {
+    font-size: .9rem;
+  }
+
+  .btn {
+    padding: 12px 19px;
+    font-size: .83rem;
+  }
+
+  .memories {
+    height: 295px;
+  }
+
+  .memory {
+    top: 40px;
+    left: calc(50% - 72px);
+    width: 145px;
+    height: 195px;
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(185px);
+  }
+
+  .moments {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .moment {
+    padding: 22px 17px;
+  }
+
+  .quiz-section {
+    padding: 12px;
+  }
+
+  .quiz-card {
+    padding: 22px 10px;
+  }
+
+  .quiz-card .buttons {
+    gap: 10px;
+  }
+
+  .quiz-card .btn {
+    padding: 11px 16px;
+  }
+
+  .memory-controls {
+    gap: 9px;
+  }
+
+  .outline-btn {
+    padding: 11px 15px;
+    font-size: .74rem;
+  }
+
+  .letter-content {
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- VALENTINE QUESTION -->
+<section id="questionPage" class="screen">
+  <div class="eyebrow">A little question from my heart 💌</div>
+  <div class="big-heart">💗</div>
+
+  <h1>Hey, My Favorite Person!</h1>
+
+  <p class="intro-text">
+    Out of all the people in this world, my heart found you.
+    And if I could choose all over again...
+    I would still choose you. Every single time. 🥹
+  </p>
+
+  <h2 class="question-title">Will you be my Valentine? 🌹</h2>
+
+  <div class="buttons">
+    <button class="btn yes" id="yesBtn">YES! 💖</button>
+    <button class="btn no runaway">No 🙈</button>
+  </div>
+
+  <p class="note" id="noMessage">
+    Psst... choose carefully, handsome! 😏💕
+  </p>
+</section>
+
+<!-- COMPLETE LOVE PAGE -->
+<main id="lovePage" class="content hidden">
+
+  <section class="hero">
+    <div class="big-heart">❤️</div>
+    <div class="eyebrow">My favorite yes in the world</div>
+    <h1>Yayyy! You said YES!</h1>
+    <p>
+      If I could hug you through this screen right now,
+      I would never let go. Welcome to our little world. 💋
+    </p>
+  </section>
+
+  <section class="card">
+    <div class="script">Thank you for coming into my life ❤️</div>
+    <p>
+      Before you, I didn't know that one person could make ordinary
+      days feel so special. You became my favorite notification,
+      my comfort after a difficult day, my reason to smile at my
+      phone, and the person I wish I could tell everything to.
+    </p>
+    <p>
+      Thank you for the laughs, the little moments, the memories,
+      and even the silly things only we understand. I don't need
+      every day to be perfect. I just want us to keep choosing
+      each other, learning together, and growing together. 🫶
+    </p>
+    <div class="script">You are one of my favorite parts of life. 💗</div>
+  </section>
+
+  <!-- 3D MEMORIES -->
+  <section>
+    <div class="section-heading">
+      <h2>Our Little Universe ✨</h2>
+      <p class="section-subtitle">
+        Every picture holds a moment. Every moment holds a feeling.
+        And every feeling reminds me of you. ❤️
+      </p>
+    </div>
+
+    <div class="memories" id="memories">
+      <div class="carousel">
+
+        <div class="memory" style="--i:0">
+          <img src="c:\Users\This PC\Downloads\ourfirst.jpeg" alt="Our first memory">
+          <div class="memory-label">Where it all began 💕</div>
+        </div>
+
+        <div class="memory" style="--i:1">
+          <img src="c:\Users\This PC\Downloads\forever.jpeg" alt="Our smiles">
+          <div class="memory-label">Your smile, my favorite</div>
+        </div>
+
+        <div class="memory" style="--i:2">
+          <img src="c:\Users\This PC\Downloads\photo smile.jpeg" alt="Little things">
+          <div class="memory-label">Little things that mean everything</div>
+        </div>
+
+        <div class="memory" style="--i:3">
+          <img src="c:\Users\This PC\Downloads\boat.jpeg" alt="Just us">
+          <div class="memory-label">Just you and me 🫶</div>
+        </div>
+
+        <div class="memory" style="--i:4">
+          <img src="c:\Users\This PC\Downloads\dreams.jpeg" alt="Our dreams">
+          <div class="memory-label">A thousand tomorrows</div>
+        </div>
+
+        <div class="memory" style="--i:5">
+          <img src="c:\Users\This PC\Downloads\mine.jpeg" alt="Forever us">
+          <div class="memory-label">More memories to come 💖</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="memory-controls">
+      <button class="outline-btn" id="pauseMemories">Pause Memories ⏸</button>
+      <button class="outline-btn" id="sendLove">Send Some Love ❤️</button>
+    </div>
+  </section>
+
+  <!-- LITTLE MOMENTS -->
+  <section>
+    <div class="section-heading">
+      <h2>Little Things I Love About Us 💌</h2>
+    </div>
+
+    <div class="moments">
+      <article class="moment">
+        <div class="emoji">🥰</div>
+        <h3>Your Smile</h3>
+        <p>The little happiness I could never get tired of seeing.</p>
+      </article>
+
+      <article class="moment">
+        <div class="emoji">😂</div>
+        <h3>Our Laughs</h3>
+        <p>The jokes, the teasing, and the moments only we understand.</p>
+      </article>
+
+      <article class="moment">
+        <div class="emoji">🤍</div>
+        <h3>Feeling Safe</h3>
+        <p>Being able to be myself with you means so much to me.</p>
+      </article>
+
+      <article class="moment">
+        <div class="emoji">🌻</div>
+        <h3>Our Future</h3>
+        <p>All the little adventures and happy memories still waiting for us.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- LOVE LETTER -->
+  <section class="letter">
+    <div class="section-heading">
+      <h2>A Letter Just for You 💝</h2>
+      <p>Read this whenever you miss me.</p>
+    </div>
+
+    <button class="btn yes" id="letterBtn">Open My Heart 💌</button>
+
+    <div id="letterContent" class="letter-content hidden">
+      <div class="script">My love, ❤️</div>
+      <p>
+        I may not always find the perfect words to explain what you
+        mean to me, but I hope you feel it in all the little ways
+        I care for you. You have become such a beautiful part of my life.
+      </p>
+      <p>
+        On happy days, I want to celebrate with you. On difficult
+        days, I want us to be patient with each other. I want us to
+        keep laughing, learning, growing, and making memories that
+        we'll smile about years from now.
+      </p>
+      <p>
+        No website could ever hold all the feelings I have for you.
+        But I made this little corner of the internet to remind you
+        that you are loved, appreciated, and special to me.
+      </p>
+      <p>
+        Thank you for being you. Here's to our story and all the
+        beautiful pages we haven't written yet. 💗
+      </p>
+      <div class="signature">Always with love, your Valentine 💋</div>
+    </div>
+  </section>
+
+  <!-- SURPRISE QUESTIONS -->
+  <section class="quiz-section" id="loveQuiz">
+
+    <div class="quiz-intro">
+      <div class="eyebrow">Only you can answer these 💕</div>
+      <h2>A Few Things I Want to Ask You...</h2>
+      <p>
+        Hehe, handsome! 😌❤️ I have some very important questions
+        for you. Be honest... but I already know your answers! 😂
+      </p>
+    </div>
+
+    <!-- QUESTION 1 -->
+    <div class="quiz-card" id="question1">
+      <div class="quiz-emoji">🥰</div>
+      <h3>I know your dream girl... do you know who she is?</h3>
+      <p>Hint: She's asking you this question right now! 🙈💗</p>
+
+      <div class="buttons">
+        <button class="btn yes" onclick="answerQuestion(1)">Yesss, I know! 💖</button>
+        <button class="btn no runaway">No 🙈</button>
+      </div>
+
+      <div class="quiz-result hidden" id="result1">
+        <div class="quiz-emoji">😭💗</div>
+        <h3>IT'S MEEEEEE!</h3>
+        <p>
+          YOUR BARVEENNN! 🥹💕 Who else could it possibly be?!
+          I'm your dream girl, your favorite girl, and your
+          partner in all our silly little adventures! 💋
+        </p>
+
+        <div class="quiz-confirm" id="confirm1">
+          <p><strong>Am I right, chellam? 😏💗</strong></p>
+          <div class="buttons">
+            <button class="btn yes" onclick="confirmAnswer(1)">Yesss, you're right! 💖</button>
+            <button class="btn no confirm-no" data-question="1">No 😂</button>
+          </div>
+          <div class="confirm-message hidden" id="confirmMessage1"></div>
+        </div>
+
+        <button class="btn yes quiz-next hidden" id="next1" onclick="nextQuestion(1)">
+          Next question, chellam! ➜
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 2 -->
+    <div class="quiz-card hidden" id="question2">
+      <div class="quiz-emoji">💍</div>
+      <h3>I'm very happy to announce my new name...</h3>
+      <p>Do you want to know what it is? 😏❤️</p>
+
+      <div class="buttons">
+        <button class="btn yes" onclick="answerQuestion(2)">Yesss, tell me! 😍</button>
+        <button class="btn no runaway">No 🙈</button>
+      </div>
+
+      <div class="quiz-result hidden" id="result2">
+        <div class="quiz-emoji">💖💍</div>
+        <h3>BARVEENRAHUMAN! ❤️</h3>
+        <p>
+          Heheeee! How does that sound, chelloooo? 🥹
+          Just imagine our names together and me smiling like
+          the happiest person in the world! 🙈💕
+        </p>
+
+        <div class="quiz-confirm" id="confirm2">
+          <p><strong>Am I right, chellam? 😏💗</strong></p>
+          <div class="buttons">
+            <button class="btn yes" onclick="confirmAnswer(2)">Yesss, you're right! 💖</button>
+            <button class="btn no confirm-no" data-question="2">No 😂</button>
+          </div>
+          <div class="confirm-message hidden" id="confirmMessage2"></div>
+        </div>
+
+        <button class="btn yes quiz-next hidden" id="next2" onclick="nextQuestion(2)">
+          Okay, next one! ➜
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 3 -->
+    <div class="quiz-card hidden" id="question3">
+      <div class="quiz-emoji">👰🏻‍♀️🤵🏻</div>
+      <h3>Are you waiting for our marriage?</h3>
+      <p>Think carefully before answering, mister! 😂 I am watching you! 👀💗</p>
+
+      <div class="buttons">
+        <button class="btn yes" onclick="answerQuestion(3)">Of course, yes! 💍</button>
+        <button class="btn no runaway">No 😜</button>
+      </div>
+
+      <div class="quiz-result hidden" id="result3">
+        <div class="quiz-emoji">😭❤️💍</div>
+        <h3>I KNEW ITTTT!</h3>
+        <p>
+          Your mind is already there, CHELLOOOOO! 😂💗
+          Someone is already dreaming about our future!
+          Here's to building a beautiful future together. 🫶
+        </p>
+
+        <div class="quiz-confirm" id="confirm3">
+          <p><strong>Am I right, chellam? 😏💗</strong></p>
+          <div class="buttons">
+            <button class="btn yes" onclick="confirmAnswer(3)">Yesss, you're right! 💖</button>
+            <button class="btn no confirm-no" data-question="3">No 😂</button>
+          </div>
+          <div class="confirm-message hidden" id="confirmMessage3"></div>
+        </div>
+
+        <button class="btn yes quiz-next hidden" id="next3" onclick="nextQuestion(3)">
+          One last thing... 💌
+        </button>
+      </div>
+    </div>
+
+    <!-- QUESTION 4 -->
+    <div class="quiz-card hidden" id="question4">
+      <div class="quiz-emoji">💌</div>
+      <h3>One last question, my love...</h3>
+      <p>
+        Will you keep choosing us, making memories with me,
+        and finding little reasons to smile together? 🥹❤️
+      </p>
+
+      <div class="buttons">
+        <button class="btn yes" onclick="answerQuestion(4)">YES, ALWAYS! ❤️</button>
+        <button class="btn no runaway">No 🙈</button>
+      </div>
+
+      <div class="quiz-result hidden" id="result4">
+        <div class="quiz-emoji">🥹💗</div>
+        <h3>That means so much to me!</h3>
+        <p>One last confirmation, my favorite person. 💕</p>
+
+        <div class="quiz-confirm" id="confirm4">
+          <p><strong>Am I right? Are we making more memories? 🫶</strong></p>
+          <div class="buttons">
+            <button class="btn yes" onclick="confirmAnswer(4)">YES, ALWAYS! ❤️</button>
+            <button class="btn no confirm-no" data-question="4">No 😂</button>
+          </div>
+          <div class="confirm-message hidden" id="confirmMessage4"></div>
+        </div>
+
+        <button class="btn yes quiz-next hidden" id="submitBtn" onclick="submitLoveQuiz()">
+          Submit My Answers 💌
+        </button>
+
+        <div class="quiz-result hidden" id="finalResult">
+          <div class="final-love">
+            <div class="quiz-emoji">💖💖💖</div>
+            <h2>Your responses are stored in my heart!</h2>
+            <p>
+              Thank you for coming into my life, for becoming someone
+              so special to me, and for filling my world with moments
+              I want to remember forever. 🥹
+            </p>
+            <p>
+              No matter how many times we see this page, I hope it
+              reminds us of the smiles, the dreams, the laughter,
+              and the love that make our story ours.
+            </p>
+            <h2 style="margin-top:22px">It's you and me, chelloooo! 🫶💍</h2>
+            <div class="script" style="margin-top:20px">
+              With all my love, Barveen ❤️
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    Made with all my love, just for you. 💗<br>
+    Every picture holds a moment. Every moment reminds me of you. ✨
+  </footer>
+
+</main>
+
+<script>
+// Open the main love story.
+document.getElementById('yesBtn').addEventListener('click', () => {
+  document.getElementById('questionPage').classList.add('hidden');
+  document.getElementById('lovePage').classList.remove('hidden');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  celebrate();
+});
+
+// Escape NO buttons on desktop and mobile.
+function moveNoButton(button) {
+  const margin = 12;
+  const maxX = Math.max(margin, window.innerWidth - button.offsetWidth - margin);
+  const maxY = Math.max(margin, window.innerHeight - button.offsetHeight - margin);
+
+  button.style.position = 'fixed';
+  button.style.zIndex = '1000';
+  button.style.left = (margin + Math.random() * (maxX - margin)) + 'px';
+  button.style.top = (margin + Math.random() * (maxY - margin)) + 'px';
+}
+
+document.querySelectorAll('.runaway').forEach(button => {
+  button.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'mouse') moveNoButton(button);
+  });
+
+  button.addEventListener('click', event => {
+    event.preventDefault();
+    moveNoButton(button);
+
+    const note = document.getElementById('noMessage');
+    if (note) note.textContent = "Aiyooo, this button is shy! 😂💕";
+  });
+
+  button.addEventListener('touchstart', event => {
+    event.preventDefault();
+    moveNoButton(button);
+  }, { passive: false });
+});
+
+// Pause/resume the 3D carousel.
+const memories = document.getElementById('memories');
+const pauseMemories = document.getElementById('pauseMemories');
+
+pauseMemories.addEventListener('click', () => {
+  memories.classList.toggle('paused');
+  pauseMemories.textContent = memories.classList.contains('paused')
+    ? 'Play Memories ▶'
+    : 'Pause Memories ⏸';
+});
+
+// Send a burst of hearts.
+document.getElementById('sendLove').addEventListener('click', () => {
+  celebrate();
+});
+
+// Love letter toggle.
+const letterBtn = document.getElementById('letterBtn');
+const letterContent = document.getElementById('letterContent');
+
+letterBtn.addEventListener('click', () => {
+  letterContent.classList.toggle('hidden');
+
+  letterBtn.textContent = letterContent.classList.contains('hidden')
+    ? 'Open My Heart 💌'
+    : 'Close My Letter 💗';
+
+  if (!letterContent.classList.contains('hidden')) {
+    letterContent.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+});
+
+// Reveal each question's answer.
+function answerQuestion(number) {
+  const card = document.getElementById('question' + number);
+  card.querySelector(':scope > .buttons').classList.add('hidden');
+  document.getElementById('result' + number).classList.remove('hidden');
+
+  document.getElementById('result' + number).scrollIntoView({
+    behavior: 'smooth',
+    block: 'center'
+  });
+
+  celebrate();
+}
+
+// The "Am I right?" confirmation.
+function confirmAnswer(number) {
+  const message = document.getElementById('confirmMessage' + number);
+  const buttons = document.querySelector('#confirm' + number + ' .buttons');
+
+  message.textContent = "I KNEW ITTT! 🥹💗 You're my favorite person!";
+  message.classList.remove('hidden');
+  buttons.classList.add('hidden');
+
+  const next = document.getElementById(
+    number === 4 ? 'submitBtn' : 'next' + number
+  );
+
+  next.classList.remove('hidden');
+
+  celebrate();
+}
+
+// NO on the confirmation asks a simple message and moves away.
+document.querySelectorAll('.confirm-no').forEach(button => {
+  function escapeConfirmation(event) {
+    if (event) event.preventDefault();
+
+    const number = button.dataset.question;
+    const message = document.getElementById('confirmMessage' + number);
+
+    message.textContent = "Aiyoooo, don't lie to me! 😂💕 I know you!";
+    message.classList.remove('hidden');
+
+    moveNoButton(button);
+  }
+
+  button.addEventListener('pointerenter', event => {
+    if (event.pointerType === 'mouse') escapeConfirmation(event);
+  });
+
+  button.addEventListener('click', escapeConfirmation);
+
+  button.addEventListener('touchstart', escapeConfirmation, {
+    passive: false
+  });
+});
+
+// Move to the next question only after confirming YES.
+function nextQuestion(currentNumber) {
+  document.getElementById('question' + currentNumber).classList.add('hidden');
+
+  const next = document.getElementById('question' + (currentNumber + 1));
+  next.classList.remove('hidden');
+
+  next.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// Final submit.
+function submitLoveQuiz() {
+  document.getElementById('submitBtn').classList.add('hidden');
+
+  const finalResult = document.getElementById('finalResult');
+  finalResult.classList.remove('hidden');
+
+  finalResult.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  celebrate();
+}
+
+// Hearts and confetti.
+function celebrate() {
+  const symbols = ['❤️', '💖', '💕', '💗', '🌸', '✨', '💋', '💜'];
+  const total = window.innerWidth < 600 ? 28 : 55;
+
+  for (let i = 0; i < total; i++) {
+    setTimeout(() => {
+      const item = document.createElement('span');
+      item.className = 'confetti';
+      item.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+      item.style.left = Math.random() * 100 + 'vw';
+      item.style.fontSize = (16 + Math.random() * 22) + 'px';
+      item.style.animationDuration = (3 + Math.random() * 3) + 's';
+
+      document.body.appendChild(item);
+      setTimeout(() => item.remove(), 6500);
+    }, i * 35);
+  }
+}
+
+// Floating hearts.
+setInterval(() => {
+  const heart = document.createElement('span');
+  heart.className = 'floating';
+  heart.textContent = ['♡', '♥', '💕', '✨', '💜'][
+    Math.floor(Math.random() * 5)
+  ];
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.style.fontSize = (14 + Math.random() * 20) + 'px';
+  heart.style.color = ['#ff9bcf', '#e6a5ff', '#ffd8ed'][
+    Math.floor(Math.random() * 3)
+  ];
+
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 6000);
+}, 850);
+
+// Twinkling stars.
+setInterval(() => {
+  const star = document.createElement('span');
+  star.className = 'romantic-star';
+  star.textContent = ['✦', '✧', '⋆', '✩', '♡'][
+    Math.floor(Math.random() * 5)
+  ];
+
+  star.style.left = Math.random() * 100 + 'vw';
+  star.style.fontSize = (10 + Math.random() * 14) + 'px';
+  star.style.animationDuration = (5 + Math.random() * 6) + 's';
+
+  document.body.appendChild(star);
+  setTimeout(() => star.remove(), 12000);
+}, 450);
+</script>
+
+</body>
+</html>
